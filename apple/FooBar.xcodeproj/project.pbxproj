@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0169E80B250B26AF00587AA6 /* CliqueShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0169E80A250B26AF00587AA6 /* CliqueShared.framework */; };
-		0169E80C250B26AF00587AA6 /* CliqueShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0169E80A250B26AF00587AA6 /* CliqueShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0191DABE24E837ED003065BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191DABD24E837ED003065BC /* AppDelegate.swift */; };
 		0191DAC024E837ED003065BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191DABF24E837ED003065BC /* SceneDelegate.swift */; };
-		0191DAC224E837ED003065BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0191DAC124E837ED003065BC /* ContentView.swift */; };
 		0191DAC424E837F4003065BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0191DAC324E837F4003065BC /* Assets.xcassets */; };
 		0191DAC724E837F4003065BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0191DAC624E837F4003065BC /* Preview Assets.xcassets */; };
 		0191DACA24E837F4003065BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0191DAC824E837F4003065BC /* LaunchScreen.storyboard */; };
+		01B6E028254DE12000484B08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B6E027254DE12000484B08 /* ContentView.swift */; };
+		01B6E02D254DE49B00484B08 /* FooShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B6E02C254DE49B00484B08 /* FooShared.framework */; };
+		01B6E02E254DE49B00484B08 /* FooShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01B6E02C254DE49B00484B08 /* FooShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0169E809250B25A600587AA6 /* Embed Frameworks */ = {
+		01B6E02F254DE49B00484B08 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0169E80C250B26AF00587AA6 /* CliqueShared.framework in Embed Frameworks */,
+				01B6E02E254DE49B00484B08 /* FooShared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,15 +32,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0169E80A250B26AF00587AA6 /* CliqueShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CliqueShared.framework; path = "../mobile/build/xcode-frameworks/CliqueShared.framework"; sourceTree = "<group>"; };
-		0191DABA24E837ED003065BC /* Clique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0191DABA24E837ED003065BC /* FooBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0191DABD24E837ED003065BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0191DABF24E837ED003065BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0191DAC124E837ED003065BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0191DAC324E837F4003065BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0191DAC624E837F4003065BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0191DAC924E837F4003065BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0191DACB24E837F4003065BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B6E027254DE12000484B08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01B6E02C254DE49B00484B08 /* FooShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FooShared.framework; path = "../mobile/build/xcode-frameworks/FooShared.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0169E80B250B26AF00587AA6 /* CliqueShared.framework in Frameworks */,
+				01B6E02D254DE49B00484B08 /* FooShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 		0184106C24E9C8A400CD31A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0169E80A250B26AF00587AA6 /* CliqueShared.framework */,
+				01B6E02C254DE49B00484B08 /* FooShared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 		0191DAB124E837EC003065BC = {
 			isa = PBXGroup;
 			children = (
-				0191DABC24E837ED003065BC /* Clique */,
+				0191DABC24E837ED003065BC /* FooBar */,
 				0191DABB24E837ED003065BC /* Products */,
 				0184106C24E9C8A400CD31A1 /* Frameworks */,
 			);
@@ -75,23 +75,23 @@
 		0191DABB24E837ED003065BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0191DABA24E837ED003065BC /* Clique.app */,
+				0191DABA24E837ED003065BC /* FooBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0191DABC24E837ED003065BC /* Clique */ = {
+		0191DABC24E837ED003065BC /* FooBar */ = {
 			isa = PBXGroup;
 			children = (
 				0191DABD24E837ED003065BC /* AppDelegate.swift */,
+				01B6E027254DE12000484B08 /* ContentView.swift */,
 				0191DABF24E837ED003065BC /* SceneDelegate.swift */,
-				0191DAC124E837ED003065BC /* ContentView.swift */,
 				0191DAC324E837F4003065BC /* Assets.xcassets */,
 				0191DAC824E837F4003065BC /* LaunchScreen.storyboard */,
 				0191DACB24E837F4003065BC /* Info.plist */,
 				0191DAC524E837F4003065BC /* Preview Content */,
 			);
-			path = Clique;
+			path = FooBar;
 			sourceTree = "<group>";
 		};
 		0191DAC524E837F4003065BC /* Preview Content */ = {
@@ -105,23 +105,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0191DAB924E837ED003065BC /* Clique */ = {
+		0191DAB924E837ED003065BC /* FooBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0191DACE24E837F4003065BC /* Build configuration list for PBXNativeTarget "Clique" */;
+			buildConfigurationList = 0191DACE24E837F4003065BC /* Build configuration list for PBXNativeTarget "FooBar" */;
 			buildPhases = (
 				0184107124E9C90500CD31A1 /* Build shared framework */,
 				0191DAB624E837ED003065BC /* Sources */,
 				0191DAB724E837ED003065BC /* Frameworks */,
 				0191DAB824E837ED003065BC /* Resources */,
-				0169E809250B25A600587AA6 /* Embed Frameworks */,
+				01B6E02F254DE49B00484B08 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Clique;
+			name = FooBar;
 			productName = Clique;
-			productReference = 0191DABA24E837ED003065BC /* Clique.app */;
+			productReference = 0191DABA24E837ED003065BC /* FooBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0191DAB524E837EC003065BC /* Build configuration list for PBXProject "Clique" */;
+			buildConfigurationList = 0191DAB524E837EC003065BC /* Build configuration list for PBXProject "FooBar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0191DAB924E837ED003065BC /* Clique */,
+				0191DAB924E837ED003065BC /* FooBar */,
 			);
 		};
 /* End PBXProject section */
@@ -198,7 +198,7 @@
 			files = (
 				0191DABE24E837ED003065BC /* AppDelegate.swift in Sources */,
 				0191DAC024E837ED003065BC /* SceneDelegate.swift in Sources */,
-				0191DAC224E837ED003065BC /* ContentView.swift in Sources */,
+				01B6E028254DE12000484B08 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,15 +335,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Clique/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FooBar/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../mobile/build/xcode-frameworks/**";
-				INFOPLIST_FILE = Clique/Info.plist;
+				INFOPLIST_FILE = FooBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.nickt.Clique;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nickt.FooBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,15 +355,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Clique/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FooBar/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../mobile/build/xcode-frameworks/**";
-				INFOPLIST_FILE = Clique/Info.plist;
+				INFOPLIST_FILE = FooBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.nickt.Clique;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nickt.FooBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0191DAB524E837EC003065BC /* Build configuration list for PBXProject "Clique" */ = {
+		0191DAB524E837EC003065BC /* Build configuration list for PBXProject "FooBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0191DACC24E837F4003065BC /* Debug */,
@@ -382,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0191DACE24E837F4003065BC /* Build configuration list for PBXNativeTarget "Clique" */ = {
+		0191DACE24E837F4003065BC /* Build configuration list for PBXNativeTarget "FooBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0191DACF24E837F4003065BC /* Debug */,

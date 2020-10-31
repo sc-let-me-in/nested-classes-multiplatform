@@ -1,4 +1,4 @@
-rootProject.name = "Clique"
+rootProject.name = "FooBar"
 
 // needed for kotlin/native coroutines
 enableFeaturePreview("GRADLE_METADATA")

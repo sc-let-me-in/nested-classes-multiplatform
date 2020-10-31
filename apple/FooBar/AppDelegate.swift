@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Clique
+//  FooBar
 //
 //  Created by Nick Thompson on 8/15/20.
 //  Copyright © 2020 Nick Thompson. All rights reserved.
@@ -11,8 +11,6 @@ import FooShared
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -33,8 +31,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    func hello(api: Api) {
-        api.nestedArgFromThisModule(nest: Nest.Nested(name: "foo"))
+    func fooSharedExampleProblem() {
+        let api = Api()
+
+        // Cannot initialize/find name
+        // let commonFizzHello = CommonFizz.Hello(myName: "hello")
+
+        // Also cannot use in function call (can't even find function)
+        // api.nestedArgFromOtherModuleHello(hello: CommonFizz.Hello(myName: "hello"))
+
+        api.argFromOtherModule(hey: CommonHey(myName: "hello"))
+        api.nestedArgFromThisModule(nest: Nest.Nested(name: "hello"))
+        api.noArgFunction()
     }
 }
 

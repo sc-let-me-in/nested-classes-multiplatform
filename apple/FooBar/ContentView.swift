@@ -1,17 +1,16 @@
 //
 //  ContentView.swift
-//  Clique
+//  FooBar
 //
-//  Created by Nick Thompson on 8/15/20.
+//  Created by Nick Thompson on 10/31/20.
 //  Copyright © 2020 Nick Thompson. All rights reserved.
 //
 
 import SwiftUI
-import CliqueShared
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
