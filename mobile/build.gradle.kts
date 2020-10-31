@@ -28,9 +28,6 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
                 api(project(":common"))
-
-                implementation(Versions.Libs.COROUTINES_CORE)
-                implementation(Versions.Libs.SERIALIZATION_CORE)
             }
         }
 

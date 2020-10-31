@@ -11,8 +11,6 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-                implementation(Versions.Libs.COROUTINES_CORE)
-                implementation(Versions.Libs.SERIALIZATION_CORE)
             }
         }
     }
