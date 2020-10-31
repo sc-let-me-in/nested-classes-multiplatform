@@ -6,8 +6,6 @@ plugins {
 }
 
 kotlin {
-//    android()
-
     //select iOS target platform depending on the Xcode environment variables
     val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
         if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
@@ -31,17 +29,6 @@ kotlin {
             }
         }
 
-//        val androidMain by getting {
-//            dependsOn(commonMain)
-//
-//            dependencies {
-//                implementation(Versions.Android.LIFECYCLE_EXTENSIONS)
-//                implementation(Versions.Android.LIFECYCLE_VM)
-//
-//                implementation(Versions.Android.TIMBER)
-//            }
-//        }
-
         val iosMain by getting {
             dependsOn(commonMain)
         }
@@ -63,16 +50,6 @@ val packForXcode by tasks.creating(Sync::class) {
 
     from({ framework.outputDirectory })
     into(targetDir)
-
-    /// generate a helpful ./gradlew wrapper with embedded Java path
-    doLast {
-        val gradlew = File(targetDir, "gradlew")
-        gradlew.writeText("#!/bin/bash\n"
-                + "export 'JAVA_HOME=${System.getProperty("java.home")}'\n"
-                + "cd '${rootProject.rootDir}'\n"
-                + "./gradlew \$@\n")
-        gradlew.setExecutable(true)
-    }
 }
 
 tasks.getByName("build").dependsOn(packForXcode)
